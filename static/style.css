@@ -1,0 +1,147 @@
+html {
+  margin: 0%;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+label {
+  font-size: x-large;
+  font-weight: bold;
+}
+#nav-top {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 50pt;
+  font-weight: 400;
+  padding-bottom: 3%;
+}
+div.row.row-cols-2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+div#apod-image.img {
+  display: flex;
+  flex-direction: column;
+  contain: content;
+  max-height: 60vh;
+}
+div#apod-text.txt,
+div.card {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #001627;
+  font-family: system-ui;
+  font-size: larger;
+  border: none;
+}
+input#year.form-control {
+  font-weight: bold;
+  font-family: caveat;
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 10px;
+}
+input#month.form-control {
+  font-weight: bold;
+  font-family: caveat;
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 10px;
+}
+input#day.form-control {
+  font-weight: bold;
+  font-family: caveat;
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 10px;
+}
+#five-columns {
+  padding-bottom: 3%;
+}
+#img-text-display {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+div#five-columns {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+}
+.star {
+  position: absolute;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 50%;
+  animation: twinkle 5s infinite, moveStar linear infinite;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+@keyframes moveStar {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-200vh) translateX(200vw);
+  }
+}
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000d18;
+  z-index: -1;
+}
+.star {
+  position: absolute;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 50%;
+  animation: twinkle 5s infinite, moveStar linear infinite;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+@keyframes moveStar {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-200vh) translateX(200vw);
+  }
+}
